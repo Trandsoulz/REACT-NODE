@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer {
+  .label_style {
+    @apply text-slate-400 text-xs inline-block px-1 left-3 z-10 relative bg-white !important;
+  }
+
+  .input_style {
+    @apply mt-[-10px] w-full border-2 border-slate-400 p-2 focus:outline-slate-500 focus:duration-300 outline-offset-0 rounded outline-none my-2 !important;
+  }
+}
